@@ -41,7 +41,7 @@
                 resultado = Numero1 + Numero2;
             }
 
-            if (opcao == "2")
+            else 
             {
                 resultado = Numero1 - Numero2;
             }
