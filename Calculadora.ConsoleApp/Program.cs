@@ -14,11 +14,10 @@
 
             Console.WriteLine("digite uma opcao");
 
-            string opcao = Console.ReadLine();
-            string OpcaoValidada = opcao.ToUpper();
+            string opcao = Console.ReadLine().ToUpper();// se o usuario digitar s minusculo ele converte para maiusculo.
+       
 
-
-            if (OpcaoValidada == "s")
+            if (opcao == "S")
             {
                 return;
             }
@@ -35,7 +34,18 @@
             string SegundoNumero = Console.ReadLine();// aqui a informaçao esta sendo recolhida como string.
             int Numero2 = Convert.ToInt32(SegundoNumero);//aqui esta sendo feita a conversao de string para int.
 
-            int resultado = Numero1 + Numero2;
+            int resultado = 0;
+
+            if (opcao=="1")
+            {
+                resultado = Numero1 + Numero2;
+            }
+
+            if (opcao == "2")
+            {
+                resultado = Numero1 - Numero2;
+            }
+
             Console.WriteLine("o resultado e "+resultado);
             Console.ReadLine();
 
