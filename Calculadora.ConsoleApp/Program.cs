@@ -11,7 +11,7 @@
             Console.WriteLine("digite 1 para somar ");
             Console.WriteLine("digite 2 para subtrair ");
             Console.WriteLine("digite 5 para sair ");
-
+            Console.WriteLine("===========================");
             Console.WriteLine("digite uma opcao");
 
             string opcao = Console.ReadLine().ToUpper();// se o usuario digitar s minusculo ele converte para maiusculo.
